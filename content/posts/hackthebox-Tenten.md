@@ -1,11 +1,18 @@
 ---
-layout: default
-title:  "HackTheBox - Tenten"
-date:   2020-07-09
-categories: HackTheBox
+author:
+  name: "0xSc0ut"
+date: 2020-07-09
+linktitle: HackTheBox - Tenten
+title: HackTheBox - Tenten
+type:
+- post
+- posts
+weight: 12
+series:
+- Hugo 101
+aliases:
+- /blog/hackthebox-tenten/
 ---
-
-# HackTheBox - Tenten
 
 Welcome back !!
 
@@ -168,12 +175,3 @@ So takis has permission to execute /bin/fuckin with root privilege,
 
 Thank you !! Have a nice day !
 
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
