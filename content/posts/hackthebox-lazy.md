@@ -2,7 +2,7 @@
 author:
   name: "0xSc0ut"
 date: 2020-07-22
-linktitle: Lazy
+linktitle: HackTheBox - Lazy
 title: HackTheBox - Lazy
 type:
 - post
