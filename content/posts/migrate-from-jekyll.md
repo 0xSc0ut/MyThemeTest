@@ -2,19 +2,17 @@
 author:
   name: "0xSc0ut"
 date: 2020-07-22
-linktitle: Migrating from Jekyll
-title: Migrate to Hugo from Jekyll
+linktitle: HackTheBox-Lazy
+title: HackTheBox - Lazy
 type:
 - post
 - posts
-weight: 10
+weight: 12
 series:
 - Hugo 101
 aliases:
-- /blog/migrate-from-jekyll/
+- /blog/HackTheBox-Lazy/
 ---
-
-# HackTheBox - Lazy
 
 ![](https://paper-attachments.dropbox.com/s_0D7F007F40F0D6C127E0E610A9E236E2412E24E3D9F3E16A5F441EA21AE79E33_1595487621067_Screenshot+2020-07-23+at+12.30.09+PM.png)
 
