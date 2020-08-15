@@ -1,5 +1,5 @@
 +++
-title = "Getting Started with Hug"
+title = "Getting Started with Hugo"
 description = ""
 type = ["posts","post"]
 tags = [
