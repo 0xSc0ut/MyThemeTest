@@ -1,11 +1,19 @@
 ---
-layout: default
-title:  "HackTheBox - Curling"
-date:   2020-07-06
-categories: HackTheBox
+author:
+  name: "0xSc0ut"
+date: 2020-07-06
+linktitle: HackTheBox - Curling
+title: HackTheBox - Curling
+type:
+- post
+- posts
+weight: 12
+series:
+- Hugo 101
+aliases:
+- /blog/hackthebox-curling/
 ---
 
-# HTB-Curling
 As part of #Hackthebox writeup,  Curling is our next one
 
 
@@ -207,13 +215,3 @@ just follow the steps,
 
 Thank you, Have a nice day!!
 
-
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
