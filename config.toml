@@ -1,4 +1,4 @@
-baseurl      = "localhost"
+baseurl      = "https://loving-roentgen-a5e77b.netlify.app/"
 title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
