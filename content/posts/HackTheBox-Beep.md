@@ -1,11 +1,21 @@
----
-layout: default
-title:  "HackTheBox - Beep "
-date:   2020-06-23
-categories: HackTheBox
----
-
-# HackTheBox Beep
++++
+title = "HackTheBox - Beep"
+description = ""
+type = ["posts","post"]
+tags = [
+    "HackTheBox",
+    "CTF",
+    "Bug",
+]
+date = "2020-06-23"
+categories = [
+    "HackTheBox",
+    "CTF",
+]
+series = ["HackTheBox"]
+[ author ]
+  name = "0xSc0ut"
++++
 
 ![](https://paper-attachments.dropbox.com/s_66C140379216529AC483768061914AA3843255DE739BD21AB922AB7413A0C96E_1592925476840_Screenshot+2020-06-23+at+8.47.09+PM.png)
 
@@ -81,12 +91,3 @@ So i try to ssh fanis with the passwords which we got previously but no luck, ou
 
 Sometimes foolish guess works
 
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>

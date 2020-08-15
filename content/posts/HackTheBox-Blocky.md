@@ -1,11 +1,21 @@
----
-layout: default
-title:  "HackTheBox - Blocky"
-date:   2020-06-30
-categories: HackTheBox
----
-
-# HackTheBox - Blocky
++++
+title = "HackTheBox - Blocky"
+description = ""
+type = ["posts","post"]
+tags = [
+    "HackTheBox",
+    "CTF",
+    "Bug",
+]
+date = "2020-06-30"
+categories = [
+    "HackTheBox",
+    "CTF",
+]
+series = ["HackTheBox"]
+[ author ]
+  name = "0xSc0ut"
++++
 
 Here we go another box !!
 
@@ -122,15 +132,3 @@ Soooooo….!!
 
 
 Thanks for reading so far, Have a nice day !!
-
-
-
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>

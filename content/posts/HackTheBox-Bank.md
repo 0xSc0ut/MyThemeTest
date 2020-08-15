@@ -1,11 +1,21 @@
----
-layout: default
-title:  "HackTheBox - Bank"
-date:   2020-06-29
-categories: HackTheBox
----
-
-# HackTheBox - Bank
++++
+title = "HackTheBox - Bank"
+description = ""
+type = ["posts","post"]
+tags = [
+    "HackTheBox",
+    "CTF",
+    "Bug",
+]
+date = "2020-06-29"
+categories = [
+    "HackTheBox",
+    "CTF",
+]
+series = ["HackTheBox"]
+[ author ]
+  name = "0xSc0ut"
++++
 In the series of HackTheBox our next stop is ‘Bank’.
 
 This is an Linux based machine which is tagged with ‘Easy’ severity, it was fun learning by playing with this box.But it needs lots of patience and information gathering skills to successfully exploit it.
@@ -155,12 +165,3 @@ So executing this file got me root
 
 Thank you, Have a good day
 
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>

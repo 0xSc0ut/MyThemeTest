@@ -1,11 +1,21 @@
----
-layout: default
-title:  "Shellter Labs - Include"
-date:   2019-05-28
-categories: main
----
-
-# Shellter Labs - Include
++++
+title = "Shellter Labs - Include"
+description = ""
+type = ["posts","post"]
+tags = [
+    "ShellterLabs",
+    "CTF",
+    "Bug",
+]
+date = "2019-05-28"
+categories = [
+    "ShellterLabs",
+    "CTF",
+]
+series = ["ShellterLabs"]
+[ author ]
+  name = "0xSc0ut"
++++
 
 By accessing the URL, it gave the same page which we have seen in "memes" challenge
 
@@ -42,13 +52,3 @@ So i checked for index.php which gave me nothing but the same one, so i traverse
 After accessing memesbrasileirossaoosmelhores.txt, Finally got the flag
 
 ![](https://paper-attachments.dropbox.com/s_895DBAE88D746DC070A81F8B4D6B21D94B95EB77CC5BF216734618A9A8F20DD3_1559050784723_Screen+Shot+2019-05-28+at+7.09.12+PM.png)
-
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>

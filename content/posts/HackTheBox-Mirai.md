@@ -1,11 +1,21 @@
----
-layout: default
-title:  "HackTheBox - Mirai"
-date:   2020-07-02
-categories: HackTheBox
----
-
-# HackTheBox - Mirai
++++
+title = "HackTheBox - Mirai"
+description = ""
+type = ["posts","post"]
+tags = [
+    "HackTheBox",
+    "CTF",
+    "Bug",
+]
+date = "2020-07-02"
+categories = [
+    "HackTheBox",
+    "CTF",
+]
+series = ["HackTheBox"]
+[ author ]
+  name = "0xSc0ut"
++++
 
 Welcomes you with another box, ‘Mirai’
 
@@ -131,13 +141,3 @@ As you can see /media/usbstick is available in filesystem /dev/sdb, lets check s
 
 
 Thank you for reading , Have a nice day
-
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>

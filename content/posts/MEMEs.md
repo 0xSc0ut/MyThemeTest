@@ -1,11 +1,21 @@
----
-layout: default
-title:  "Shellter Labs - MEMEs"
-date:   2019-05-28
-categories: main
----
-
-# Shellter Labs- MEMEs
++++
+title = "Shellter Labs - MEMEs"
+description = ""
+type = ["posts","post"]
+tags = [
+    "ShellterLabs",
+    "CTF",
+    "Bug",
+]
+date = "2019-05-28"
+categories = [
+    "ShellterLabs",
+    "CTF",
+]
+series = ["ShellterLabs"]
+[ author ]
+  name = "0xSc0ut"
++++
 
 As a initial recon i just tried /robots.txt, which pop me with below
 
@@ -25,13 +35,3 @@ It is obvious that i found out the flag which is available in flag.txt
 **TakeAways:**
 
 Always have a look at config files or files that are accessible, it may contain some sensitive informations.
-
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>

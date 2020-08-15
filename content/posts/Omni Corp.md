@@ -1,11 +1,21 @@
----
-layout: default
-title:  "Shellter Labs - Omni Corp"
-date:   2019-05-28
-categories: main
----
-
-# Shellter Labs-Omni Corp
++++
+title = "Shellter Labs - Omni Corp"
+description = ""
+type = ["posts","post"]
+tags = [
+    "ShellterLabs",
+    "CTF",
+    "Bug",
+]
+date = "2019-05-28"
+categories = [
+    "ShellterLabs",
+    "CTF",
+]
+series = ["ShellterLabs"]
+[ author ]
+  name = "0xSc0ut"
++++
 
 ![](https://paper-attachments.dropbox.com/s_5BFC514CDB77BAE41D266A3929E09BF4A037693D98B0F9DBA01B00747655E671_1559026954596_Screen+Shot+2019-05-28+at+12.32.20+PM.png)
 
@@ -40,12 +50,3 @@ So in our case i have used corresponding data type which gave me the flag
 
 Learnt about [php type juggling](https://www.php.net/manual/en/language.types.type-juggling.php)
 
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>

@@ -1,11 +1,22 @@
----
-layout: default
-title:  "Shellter Labs - Hello Photo"
-date:   2019-05-29
-categories: main
----
++++
+title = "Shellter Labs- Hello Photo"
+description = ""
+type = ["posts","post"]
+tags = [
+    "ShellterLabs",
+    "CTF",
+    "Bug",
+]
+date = "2019-05-29"
+categories = [
+    "ShellterLabs",
+    "CTF",
+]
+series = ["ShellterLabs"]
+[ author ]
+  name = "0xSc0ut"
++++
 
-# Shellter Labs- Hello Photo
 By just seeing the upload button i thought that is surely going to be an executing command using file upload challenge
 
 ![](https://paper-attachments.dropbox.com/s_14876C969013F8CA310BF79378B4A72484ECB88169401B4D5240D129E903BE7C_1559029410368_Screen+Shot+2019-05-28+at+1.12.15+PM.png)
@@ -49,13 +60,3 @@ So here we go found the flag
 **Takeaway:**
 
 Command execution with file upload using image files.
-
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>

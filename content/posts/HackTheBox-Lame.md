@@ -1,11 +1,21 @@
----
-layout: default
-title:  "HackTheBox - Lame"
-date:   2020-06-26
-categories: HackTheBox
----
-
-# HackTheBox - Lame
++++
+title = "HackTheBox - Lame"
+description = ""
+type = ["posts","post"]
+tags = [
+    "HackTheBox",
+    "CTF",
+    "Bug",
+]
+date = "2020-06-26"
+categories = [
+    "HackTheBox",
+    "CTF",
+]
+series = ["HackTheBox"]
+[ author ]
+  name = "0xSc0ut"
++++
 
 Lame is one of the oldest machines, which is tagged as easy, usually this machine is preferred by one who is intrested in OSCP.
 
@@ -85,13 +95,3 @@ I know this version is vulnerable to privilege escalation as i have experienced 
 Thats it for now, this box can also be exploited through vsfpd which i will share in my upcoming post.
 
 Thank you, Have a nice day
-
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>

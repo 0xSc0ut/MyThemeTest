@@ -2,7 +2,7 @@ baseurl      = "https://0xsc0ut.netlify.app/"
 title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
-paginate     = 10
+paginate     = 15
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -11,16 +11,16 @@ paginate     = 10
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Subtitle for home
-  homeSubtitle = "A simple and beautiful blog"
+  homeSubtitle = "Some ordinary guy who is learning day by day"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
 
   # Enable sharing buttons, if you linke
-  enableSharingButtons = true
+  enableSharingButtons = false
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
+  description = "My blog"
   keywords = "homepage, blog"
   images = [""]
 
@@ -34,26 +34,47 @@ paginate     = 10
 
 [languages]
   [languages.en]
-    title = "Hello Friend"
-    subtitle = "A simple theme for Hugo"
+    title = "Vignesh Jothiraj (0xSc0ut)"
+    subtitle = ""
     keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    #copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "0xSc0ut"
+      logoText = "$ 0xSc0ut"
       logoHomeLink = "/"
     # or
     #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+    #path = "/img/your-example-logo.svg"
+    #alt = "Your example logo alt text"
 
   # And you can even create generic menu
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
     url        = "/posts"
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
+ # [[menu.main]]
+  #  identifier = "about"
+   # name       = "About"
+    #url        = "/about"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/0xSc0ut"
+
+  #[[params.social]]
+   # name = "email"
+    #url  = "mailto:dubbakur@protonmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/0xSc0ut/"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/vignesh-jothiraj-20413413a/"
+
+  #[[params.social]]
+   # name = "stackoverflow"
+    #url  = "https://www.stackoverflow.com/"
