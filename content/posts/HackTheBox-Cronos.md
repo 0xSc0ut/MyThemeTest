@@ -1,11 +1,18 @@
 ---
-layout: default
-title:  "HackTheBox - Cronos"
-date:   2020-07-14
-categories: HackTheBox
+author:
+  name: "0xSc0ut"
+date: 2020-07-14
+linktitle: HackTheBox - Cronos
+title: HackTheBox - Cronos
+type:
+- post
+- posts
+weight: 12
+series:
+- Hugo 101
+aliases:
+- /blog/hackthebox-cronos/
 ---
-
-# HackTheBox - Cronos
 
 Welcome back with another HackTheBox machine
 
@@ -205,12 +212,3 @@ BOOM!!
 
 Thank you !! Will see you again in my next post
 
-<div id="hyvor-talk-view"></div>
-<script type="text/javascript">
-    var HYVOR_TALK_WEBSITE = 961; // DO NOT CHANGE THIS
-    var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
-        id: '{{page.id}}'
-    };
-</script>
-<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
