@@ -85,7 +85,7 @@ As initial recon always start with scanning all open ports,
     1   517.49 ms 10.10.14.1
     2   517.03 ms 10.10.10.181
 ```
-Nothing special, lets check what there in port 80
+Nothing special, lets check whats there in port 80
 
 ```
     This site has been owned
