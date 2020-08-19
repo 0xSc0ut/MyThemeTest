@@ -24,13 +24,13 @@ Let’s have a look at a machine which just got retired, Traceback is my second 
 
 Initial foothold is kind of CTF whereas going further is realtime.
 
-##**Tools:**
+**Tools:**
 
 
 - Port Scan - Masscan and Nmap
 - Privilege Escalation - [LinPeas](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite)
 
-##**Initial Foothold:**
+**Initial Foothold:**
 
 As initial recon always start with scanning all open ports,
 
@@ -145,7 +145,7 @@ I just logged in with default credentials which was mentioned in the file and cr
     webadmin
     
 
-##**Privilege Escalation towards user.txt:**
+**Privilege Escalation towards user.txt:**
 
 
 
@@ -208,7 +208,7 @@ All set let’s go for escalation
 BOOM!!
 
 
-##**Privilege Escalation toward root.txt:**
+**Privilege Escalation toward root.txt:**
 
 Working without proper shell is hard, so lets add our public key in .ssh folder of sysadmin and login with that,
 
