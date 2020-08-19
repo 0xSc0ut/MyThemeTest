@@ -192,8 +192,8 @@ Above information conveys that **webadmin** can run **/home/sysadmin/luvit** wit
 
 **References:**
 
-https://gtfobins.github.io/gtfobins/lua/
-https://www.lua.org/manual/5.1/lua.html
+    - https://gtfobins.github.io/gtfobins/lua/
+    - https://www.lua.org/manual/5.1/lua.html
 
 What we need to know is “how to execute os command using lua?” 
 
