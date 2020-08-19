@@ -7,7 +7,7 @@ tags = [
     "CTF",
     "Bug",
 ]
-date = "2020-07-14"
+date = "2020-08-15"
 categories = [
     "HackTheBox",
     "CTF",
