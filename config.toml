@@ -4,6 +4,9 @@ languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 15
 
+# Google Analytics
+googleAnalytics = "UA-176738301-1"
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -63,9 +66,9 @@ paginate     = 15
     name = "twitter"
     url  = "https://twitter.com/0xSc0ut"
 
-  #[[params.social]]
-   # name = "email"
-    #url  = "mailto:dubbakur@protonmail.com"
+  [[params.social]]
+    name = "email"
+    url  = "mailto:0xsc0ut.me@gmail.com"
 
   [[params.social]]
     name = "github"
